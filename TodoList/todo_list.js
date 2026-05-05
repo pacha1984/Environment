@@ -34,7 +34,13 @@ function displayTasks() {
             displayTasks();
         }
 
+    function clearAllTasksTasks() {
+            tasks = [];  // Clear all tasks by setting the array to empty
+            displayTasks();  // Update the display after clearing
+        }
+
 addTaskBtn.addEventListener("click", addTask);
 clearCompletedBtn.addEventListener("click", clearCompletedTasks);
+clearAllTasksBtn.addEventListener("click", clearAllTasksTasks);
 
  displayTasks();
